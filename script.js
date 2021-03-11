@@ -5,7 +5,7 @@ var generateBtn = document.querySelector("#generate");
 function generatePassword(){
   var finalValue = "";
   var characterCount = prompt("How many characters?");
-  var includeSpecialCharacters = confirm("Allow special characters?"):
+  var includeSpecialCharacters = confirm("Allow special characters?");
 
 
 
