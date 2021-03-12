@@ -5,9 +5,9 @@ var generateBtn = document.querySelector("#generate");
 function generatePassword(){
   var finalValue = "";
   var characterCount = prompt("How many characters?");
-  var numbers = prompt("Do you want numbers in your password?");
-  var lowerCases = prompt("Do you want lowercases in your password?");
-  var upperCases = prompt("Do you want uppercases in your password?");
+  var numberChars = prompt ("Do you want numbers in your password?");
+  var lowerChars = prompt("Do you want lowercases in your password?");
+  var upperChars = prompt("Do you want uppercases in your password?");
 
   if (characterCount >= 8){
 
@@ -32,8 +32,26 @@ function generatePassword(){
       array[j] = temp; 
 
     }
+    if (numberChars === true) {
+      minimumNumbers = functionArray.getnumberChars();
+      minimumCount++;
+  
+    }
+  
+    if (lowerChars === true) {
+      minimumLowerCases = functionArray.getlowerChars();
+      minimumCount++;
+  
+    }
+  
+    if (upperChars === true) {
+      minimumUpperCases = functionArray.getupperChars();
+      minimumCount++;
+  
+    }
+
   }
-    return array;
+    
 
 
   }
@@ -45,7 +63,7 @@ function generatePassword(){
 }
 // Write password to the #password input
 function writePassword() {
-  var password = generatePassword("#password");
+  var password = generatePassword("password");
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
