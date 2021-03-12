@@ -12,8 +12,8 @@ function generatePassword(){
   }
  function generatePassword (passwordLength)
  var numberChars = "0123456789";
- var upperChars = "ABCDEFGHIJKLMNOPQURSTUVWXYZ"
- var lowerChars = "abcdefghijklmnopqurstuvwxyz"
+ var upperChars = "ABCDEFGHIJKLMNOPQURSTUVWXYZ";
+ var lowerChars = "abcdefghijklmnopqurstuvwxyz";
  var allChars = numberChars + upperChars + lowerChars;
 
 
