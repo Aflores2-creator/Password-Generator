@@ -5,9 +5,9 @@ var generateBtn = document.querySelector("#generate");
 function generatePassword(){
   var finalValue = "";
   var characterCount = prompt("How many characters?");
-  var numbers = confirm("Do you want numbers in your password?");
-  var lowerCases = confirm("Do you want lowercases in your password?");
-  var upperCases = confirm("Do you want uppercases in your password?");
+  var numbers = prompt("Do you want numbers in your password?");
+  var lowerCases = prompt("Do you want lowercases in your password?");
+  var upperCases = prompt("Do you want uppercases in your password?");
 
   if (characterCount >= 8){
 
