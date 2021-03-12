@@ -5,13 +5,13 @@ var generateBtn = document.querySelector("#generate");
 function generatePassword(){
   var finalValue = "";
   var characterCount = prompt("How many characters?");
-  var numberChars = prompt ("Do you want numbers in your password?");
-  var lowerChars = prompt("Do you want lowercases in your password?");
-  var upperChars = prompt("Do you want uppercases in your password?");
+  var numberChars = confirm ("Do you want numbers in your password?");
+  var lowerChars = confirm ("Do you want lowercases in your password?");
+  var upperChars = confirm ("Do you want uppercases in your password?");
 
-  if (characterCount >= 8){
+  // if (characterCount >= 8){
 
-  }
+  // }
  function generatePassword (passwordLength){
   var numberChars = ("0123456789");
   var upperChars = ("ABCDEFGHIJKLMNOPQURSTUVWXYZ");
@@ -32,19 +32,23 @@ function generatePassword(){
       array[j] = temp; 
 
     }
+    console.log(numberChars)
     if (numberChars === true) {
+      console.log(numberChars)
       minimumNumbers = functionArray.getnumberChars();
       minimumCount++;
   
     }
-  
+    console.log(lowerChars)
     if (lowerChars === true) {
+      console.log(lowerChars)
       minimumLowerCases = functionArray.getlowerChars();
       minimumCount++;
   
     }
-  
+    console.log(upperChars)
     if (upperChars === true) {
+      console.log(upperChars)
       minimumUpperCases = functionArray.getupperChars();
       minimumCount++;
   
